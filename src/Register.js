@@ -100,6 +100,17 @@ const Register = () => {
 					</p>
 					<h1>Register</h1>
 					<form onSubmit={handleSubmit}>
+					<label htmlFor="username">
+							Full Name:
+							
+						</label>
+						<input
+							type="text"
+							id="username"
+                			className="form-control"
+                		
+                
+             			 />
 						<label htmlFor="username">
 							Username:
 							<FontAwesomeIcon
@@ -137,7 +148,39 @@ const Register = () => {
 							<br />
 							Letters, numbers, underscores, hyphens allowed.
 						</p>
+						<label >
+							Refferal ID:
+							
+						</label>
+						<input
+							type="text"
+                			className="form-control"
+             			 />
 
+						<label >
+							Email ID:
+							
+						</label>
+						<input
+							type="text"
+                			className="form-control"
+             			 />
+<label >
+							 Country:
+							
+						</label>
+						<input
+							type="text"
+                			className="form-control"
+             			 />
+						 <label >
+							Mobile Number:
+							
+						</label>
+						<input
+							type="text"
+                			className="form-control"
+             			 />
 						<label htmlFor="password">
 							Password:
 							<FontAwesomeIcon
@@ -210,7 +253,7 @@ const Register = () => {
 							Must match the first password input field.
 						</p>
 
-						<button
+						<button style={{background:"#ffc107"}}
 							disabled={!validName || !validPwd || !validMatch ? true : false}
 						>
 							Sign Up
